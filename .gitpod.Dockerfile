@@ -29,7 +29,7 @@ RUN conda install --quiet --yes \
     'numba' \
     'pandas' \
     'scipy' \
-    'perfect' \
+    'prefect[viz]' \
     'seaborn' \
     'sqlalchemy' \
     'sympy' \
