@@ -17,30 +17,21 @@ USER ${NB_UID}
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
-    'altair' \
-    'beautifulsoup4' \
     'bokeh' \
     'bottleneck' \
     'cloudpickle' \
     'conda-forge::blas=*=openblas' \
-    'cython' \
     'dask' \
     'dill' \
-    'h5py' \
     'ipympl'\
     'ipywidgets' \
     'matplotlib-base' \
     'numba' \
-    'numexpr' \
     'pandas' \
-    'protobuf' \
-    'pytables' \
-    'scikit-image' \
-    'scikit-learn' \
     'scipy' \
+    'perfect' \
     'seaborn' \
     'sqlalchemy' \
-    'statsmodels' \
     'sympy' \
     'widgetsnbextension'\
     && conda clean --all -f -y && \
