@@ -17,22 +17,15 @@ USER ${NB_UID}
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
-    'bokeh' \
-    'bottleneck' \
     'cloudpickle' \
     'conda-forge::blas=*=openblas' \
     'dask' \
-    'dill' \
     'ipympl'\
     'ipywidgets' \
     'matplotlib-base' \
     'numba' \
     'pandas' \
-    'scipy' \
-    'prefect[viz]' \
-    'seaborn' \
-    'sqlalchemy' \
-    'sympy' \
+    'prefect[viz,templates]' \
     'widgetsnbextension'\
     && conda clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
